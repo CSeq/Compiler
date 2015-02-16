@@ -1,0 +1,12 @@
+L1:	index = 0
+L3:	x = 3 + 2
+L4:	iffalse x == 5 goto L5
+L6:	x = 6
+L5:	x = x - 1
+L8:	if x > 0 goto L5
+L7:	iffalse index < 5 goto L2
+L9:	t1 = index * 8
+	t2 = index + 1
+	array [ t1 ] = t2
+	goto L7
+L2:

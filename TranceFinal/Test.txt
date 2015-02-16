@@ -1,0 +1,20 @@
+{
+	int x;
+	float[5] array;
+	int index;
+	index = 0;
+	x = 3 + 2;
+	if (x == 5)
+	{
+		x = 6;
+	}
+	do
+	{
+		x = x - 1;
+	} while (x > 0);
+
+	while (index < 5)
+	{
+		array[index] = index + 1;
+	}
+}
