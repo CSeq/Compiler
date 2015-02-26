@@ -16,10 +16,6 @@ Logical::Logical(shared_ptr<Token> tok, Expr* x1, Expr* x2) : Expr(tok, NULL)
 
 Logical::~Logical()
 {
-	delete m_expr1;
-	m_expr1 = nullptr;
-	delete m_expr2;
-	m_expr2 = nullptr;
 }
 
 Expr* Logical::GetExpr1() const

@@ -14,10 +14,6 @@ Access::Access(Id* id, Expr* x, shared_ptr<Type> type) : Op(nullptr, type)
 
 Access::~Access()
 {
-	delete m_array;
-	m_array = nullptr;
-	delete m_index;
-	m_index = nullptr;
 }
 
 

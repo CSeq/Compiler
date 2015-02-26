@@ -12,10 +12,6 @@ Do::Do()
 
 Do::~Do()
 {
-	delete m_expr;
-	m_expr = nullptr;
-	delete m_stmt;
-	m_stmt = nullptr;
 }
 
 

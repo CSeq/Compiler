@@ -15,10 +15,6 @@ Set::Set(Id* id, Expr* x)
 
 Set::~Set()
 {
-	delete m_expr;
-	m_expr = nullptr;
-	delete m_id;
-	m_id = nullptr;
 }
 
 Id* Set::GetId() const

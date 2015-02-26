@@ -17,12 +17,6 @@ Else::Else(Expr* x, Stmt* s1, Stmt* s2)
 
 Else::~Else()
 {
-	delete m_stmt1;
-	m_stmt1 = nullptr;
-	delete m_stmt2;
-	m_stmt2 = nullptr;
-	delete m_expr;
-	m_expr = nullptr;
 }
 
 

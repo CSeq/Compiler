@@ -18,12 +18,6 @@ SetElem::SetElem(Access* x, Expr* y)
 
 SetElem::~SetElem()
 {
-	delete m_index;
-	m_index = nullptr;
-	delete m_array;
-	m_array = nullptr;
-	delete m_expr;
-	m_expr = nullptr;
 }
 
 shared_ptr<Type> SetElem::Check(shared_ptr<Type> p1, shared_ptr<Type> p2)

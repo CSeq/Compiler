@@ -13,8 +13,6 @@ Unary::Unary(shared_ptr<Token> tok, Expr* x) : Op(tok, nullptr)
 
 Unary::~Unary()
 {
-	delete m_expr;
-	m_expr = nullptr;
 }
 
 Expr* Unary::GetExpr() const

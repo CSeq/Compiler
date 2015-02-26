@@ -16,10 +16,7 @@ Arith::Arith(shared_ptr<Token> tok, Expr* x1, Expr* x2) : Op(tok, nullptr)
 
 Arith::~Arith()
 {
-	delete m_expr1;
-	m_expr1 = nullptr;
-	delete m_expr2;
-	m_expr2 = nullptr;
+
 }
 
 Expr* Arith::GetExpr1() const

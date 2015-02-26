@@ -12,10 +12,6 @@ While::While()
 
 While::~While()
 {
-	delete m_stmt;
-	m_stmt = nullptr;
-	delete m_expr;
-	m_expr = nullptr;
 }
 
 Expr* While::GetExpr() const

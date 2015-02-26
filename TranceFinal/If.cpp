@@ -14,10 +14,6 @@ If::If(Expr* x, Stmt* stmt)
 
 If::~If()
 {
-	delete m_stmt;
-	m_stmt = nullptr;
-	delete m_expr;
-	m_expr = nullptr;
 }
 
 Expr* If::GetExpr() const
