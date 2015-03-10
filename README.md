@@ -15,42 +15,37 @@ the time.
 
 Sample:  Without listing the entire grammar for language here is what the sample file looks like
 
-'''
-{
-	int x;
-	float[5] array;
-	int index;
-	index = 0;
-	x = 3 + 2;
-	if (x == 5)
-	{
-		x = 6;
-	}
-	do
-	{
-		x = x - 1;
-	} while (x > 0);
-
-	while (index < 5)
-	{
-		array[index] = index + 1;
-	}
-}
-'''
+    {
+        int x;
+        float[5] array;
+        int index;
+        index = 0;
+        x = 3 + 2;
+        if (x == 5)
+        {
+            x = 6;
+        }
+        do
+        {
+            x = x - 1;
+        } while (x > 0);
+        while (index < 5)
+        {
+            array[index] = index + 1;
+        }
+    }
 
 and here is how it translates
 
-'''
-L1:	index = 0
-L3:	x = 3 + 2
-L4:	iffalse x == 5 goto L5
-L6:	x = 6
-L5:	x = x - 1
-L8:	if x > 0 goto L5
-L7:	iffalse index < 5 goto L2
-L9:	t1 = index * 8
-	t2 = index + 1
-	array [ t1 ] = t2
-	goto L7
-L2:
-'''
+    L1:	index = 0
+    L3:	x = 3 + 2
+    L4:	iffalse x == 5 goto L5
+    L6:	x = 6 
+    L5:	x = x - 1
+    L8:	if x > 0 goto L5
+    L7:	iffalse index < 5 goto L2
+    L9:	t1 = index * 8
+        t2 = index + 1
+        array [ t1 ] = t2
+        goto L7
+    L2:
