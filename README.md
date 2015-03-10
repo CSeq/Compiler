@@ -13,7 +13,8 @@ Future:  In the future there will a backend compiler that performs some optimiza
 code.  The instruction set supported by the backend will be dependant on whatever type of instruction set I am running at
 the time.
 
-Sample:  Without listing the entire grammar for language here is what the sample file looks like:
+Sample:  Without listing the entire grammar for language here is what the sample file looks like
+
 '''
 {
 	int x;
@@ -36,7 +37,9 @@ Sample:  Without listing the entire grammar for language here is what the sample
 	}
 }
 '''
+
 and here is how it translates
+
 '''
 L1:	index = 0
 L3:	x = 3 + 2
