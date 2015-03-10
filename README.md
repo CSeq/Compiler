@@ -14,7 +14,7 @@ code.  The instruction set supported by the backend will be dependant on whateve
 the time.
 
 Sample:  Without listing the entire grammar for language here is what the sample file looks like:
-
+'''
 {
 	int x;
 	float[5] array;
@@ -35,9 +35,9 @@ Sample:  Without listing the entire grammar for language here is what the sample
 		array[index] = index + 1;
 	}
 }
-
+'''
 and here is how it translates
-
+'''
 L1:	index = 0
 L3:	x = 3 + 2
 L4:	iffalse x == 5 goto L5
@@ -50,3 +50,4 @@ L9:	t1 = index * 8
 	array [ t1 ] = t2
 	goto L7
 L2:
+'''
